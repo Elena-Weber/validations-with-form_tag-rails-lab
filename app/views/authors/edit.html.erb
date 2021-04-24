@@ -1,4 +1,4 @@
-<h2>Create an Author</h2>
+<h2>Edit the Author</h2>
 <%= form_tag("/authors") do %>
   <% if @author.errors.any? %>
     <div id="error_explanation">
@@ -25,6 +25,6 @@
     <%= label_tag "phone_number", "Phone Number" %>
     <%= text_field_tag "phone_number", @author.phone_number %>
   </div>
-  
-  <%= submit_tag "Create" %>
+
+  <%= submit_tag "Edit" %>
 <% end %> 
